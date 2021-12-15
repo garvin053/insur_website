@@ -8,4 +8,9 @@ from .models import CustomUser
 class UserSerializer(ModelSerializer):
     class Meta:
         model = CustomUser
-        fields = ('email', 'last_login', 'date_joined', 'is_staff')
+        fields = ('email', 'nationality', 'first_name', 'last_name', 'city',
+                  'emer_contact_num', 'emer_contact_person',
+                  'gender',
+                  'zipcode', 'street')
+
+# 'date_joined', 'is_staff',
